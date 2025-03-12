@@ -1,0 +1,154 @@
+@font-face {
+    font-family: Village;
+    src: url(fonts/Village-wLn3.ttf);
+}
+
+@font-face {
+    font-family: StarBorn;
+    src: url(fonts/Starborn.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('img_galeria/Fondo_Galeria.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Village, sans-serif;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header li {
+    margin: 0 15px;
+}
+
+/* Estilo base de los enlaces del menú */
+header li a {
+    position: relative; /* Permite posicionar elementos hijos como el subrayado */
+    color: rgb(0, 0, 0); /* Color del texto */
+    text-decoration: none; /* Quita el subrayado por defecto */
+    font-size: 30px; /* Tamaño del texto */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    transition: color 0.3s ease-in-out; /* Transición suave al cambiar de color */
+}
+
+/* --- EFECTO DE SUBRAYADO ANIMADO SOLO PARA LOS ENLACES, EXCLUYENDO EL LOGO --- */
+
+/* Se aplica el efecto de subrayado solo a los enlaces que NO están dentro de .logo */
+header li a:not(.logo a)::after {
+    content: ""; /* Se genera un pseudo-elemento vacío */
+    position: absolute; /* Posicionamiento absoluto respecto al enlace */
+    left: 0; /* Empieza desde el lado izquierdo del enlace */
+    bottom: -5px; /* Se coloca debajo del texto */
+    width: 0; /* Inicialmente el subrayado tiene ancho 0 */
+    height: 3px; /* Grosor del subrayado */
+    background-color: #ffcc00; /* Color del subrayado */
+    transition: width 0.3s ease-in-out; /* Efecto de animación suave */
+}
+
+/* Cuando se pasa el ratón por encima, el subrayado se extiende */
+header li a:not(.logo a):hover::after {
+    width: 100%; /* El subrayado se expande completamente */
+}
+
+header .logo img {
+    height: 80px;
+    width: 80px;
+}
+
+.menu-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 35px;
+}
+
+.menu-icons a {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out; /* Animación suave */
+}
+
+.menu-icons img:hover {
+    transform: scale(1.5); /* Aumenta el tamaño de la imagen al 150% */
+}
+
+.Albums {
+    min-height: 100vh; /* Asegura que la sección ocupe toda la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas con el mismo ancho */
+    gap: 35px;
+    padding: 20px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.imagen-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra la imagen y el título */
+}
+
+.imagen-container img {
+    width: 100%;
+    height: 300px; /* Aumenta el tamaño de las imágenes */
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagen-container img:hover {
+    transform: scale(1.05);
+}
+
+.titulo-imagen {
+    margin-top: 10px; /* Espacio entre la imagen y el título */
+    font-size: 18px;
+    font-weight: bold;
+    color: white; /* Ajusta el color según tu diseño */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejor legibilidad */
+}
+
+
+
+footer {
+    background-color: #333;
+     color: white; 
+     display: flex;
+     justify-content: space-around; 
+     align-items: center; 
+     padding: 20px; 
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ 

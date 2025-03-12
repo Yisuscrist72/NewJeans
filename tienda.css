@@ -1,0 +1,186 @@
+@font-face {
+    font-family: Village;
+    src: url(fonts/Village-wLn3.ttf);
+}
+
+@font-face {
+    font-family: StarBorn;
+    src: url(fonts/Starborn.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('img_tienda/Fondo_Tienda.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Village, sans-serif;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header li {
+    margin: 0 15px;
+}
+
+/* Estilo base de los enlaces del menú */
+header li a {
+    position: relative; /* Permite posicionar elementos hijos como el subrayado */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado por defecto */
+    font-size: 30px; /* Tamaño del texto */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    transition: color 0.3s ease-in-out; /* Transición suave al cambiar de color */
+}
+
+/* --- EFECTO DE SUBRAYADO ANIMADO SOLO PARA LOS ENLACES, EXCLUYENDO EL LOGO --- */
+
+/* Se aplica el efecto de subrayado solo a los enlaces que NO están dentro de .logo */
+header li a:not(.logo a)::after {
+    content: ""; /* Se genera un pseudo-elemento vacío */
+    position: absolute; /* Posicionamiento absoluto respecto al enlace */
+    left: 0; /* Empieza desde el lado izquierdo del enlace */
+    bottom: -5px; /* Se coloca debajo del texto */
+    width: 0; /* Inicialmente el subrayado tiene ancho 0 */
+    height: 3px; /* Grosor del subrayado */
+    background-color: #ffcc00; /* Color del subrayado */
+    transition: width 0.3s ease-in-out; /* Efecto de animación suave */
+}
+
+/* Cuando se pasa el ratón por encima, el subrayado se extiende */
+header li a:not(.logo a):hover::after {
+    width: 100%; /* El subrayado se expande completamente */
+}
+
+header .logo img {
+    height: 80px;
+    width: 80px;
+}
+
+.menu-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 35px;
+}
+
+.menu-icons a {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out; /* Animación suave */
+}
+
+.menu-icons img:hover {
+    transform: scale(1.5); /* Aumenta el tamaño de la imagen al 150% */
+}
+
+.tienda {
+    text-align: center;
+    padding: 50px 20px;
+    color: rgb(0, 0, 0);
+}
+
+.tienda h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: Village, sans-serif;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+/* Contenedor con GRID - 3 FILAS, VARIAS COLUMNAS */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-template-rows: repeat(2, auto); /* 2 filas, altura automática */
+    gap: 30px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* Diseño de cada tarjeta */
+.tarjeta {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tarjeta h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.tarjeta p {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #000000;
+}
+
+.boton-compra {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #ffcc00;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.boton-compra:hover {
+    background: #e6b800;
+}
+
+
+
+
+
+footer {
+    background-color: #333;
+     color: white; 
+     display: flex;
+     justify-content: space-around; 
+     align-items: center; 
+     padding: 20px; 
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ 

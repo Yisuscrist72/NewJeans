@@ -1,0 +1,93 @@
+/* responsive.css */
+
+/* Estilos generales para móviles */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* Ajusta el tamaño de la fuente para móviles */
+    }
+
+    header {
+        position: relative; /* Cambia la posición del header para móviles */
+        padding: 10px 0; /* Añade un poco de padding */
+    }
+
+    header ul.menu {
+        flex-direction: column; /* Cambia la dirección del menú a vertical */
+        align-items: center; /* Centra los elementos del menú */
+    }
+
+    header ul.menu li {
+        margin: 10px 0; /* Ajusta el margen entre los elementos del menú */
+    }
+
+    header .logo img {
+        height: 60px; /* Reduce el tamaño del logo */
+        width: 60px;
+    }
+
+    .menu-icons {
+        margin-right: 0; /* Elimina el margen derecho */
+        margin-top: 10px; /* Añade un margen superior */
+    }
+
+    .menu-icons img {
+        width: 25px; /* Reduce el tamaño de los íconos de idioma */
+        height: 25px;
+    }
+
+    .Fondo {
+        height: 50vh; /* Reduce la altura del fondo */
+    }
+
+    .seccion1, .seccion3 {
+        height: auto; /* Ajusta la altura de las secciones */
+        flex-direction: column; /* Cambia la dirección de los elementos a vertical */
+        padding: 20px; /* Añade padding */
+    }
+
+    .seccion1 img, .seccion3 img {
+        height: 300px; /* Reduce la altura de las imágenes */
+    }
+
+    .seccion1 video, .seccion3 video {
+        width: 100%; /* Ajusta el ancho del video al 100% */
+        margin-top: 20px; /* Añade un margen superior */
+    }
+
+    .seccion2 {
+        padding: 20px; /* Añade padding */
+        text-align: center; /* Centra el texto */
+    }
+
+    .seccion2 h1 {
+        font-size: 24px; /* Reduce el tamaño del título */
+    }
+
+    .seccion2 p {
+        font-size: 16px; /* Reduce el tamaño del texto */
+    }
+
+    .seccion4 {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        padding: 20px; /* Añade padding */
+    }
+
+    .seccion4 .grid-item {
+        margin-bottom: 20px; /* Añade un margen inferior entre los elementos */
+    }
+
+    .grid-item img {
+        height: 150px; /* Reduce la altura de las imágenes */
+        margin-top: 20px; /* Ajusta el margen superior */
+    }
+
+    footer {
+        flex-direction: column; /* Cambia la dirección del footer a vertical */
+        text-align: center; /* Centra el texto */
+        padding: 10px; /* Añade padding */
+    }
+
+    footer p {
+        margin: 5px 0; /* Ajusta el margen entre los párrafos */
+    }
+}
