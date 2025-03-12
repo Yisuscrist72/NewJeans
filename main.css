@@ -94,6 +94,10 @@ header .logo img {
     transform: scale(1.5);
 }
 
+.menu-toggle {
+    display: none;
+}
+
 main {
     background-color: aliceblue;
     background-attachment: fixed;
@@ -239,36 +243,96 @@ footer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Estilos para dispositivos móviles (ancho máximo de 768px) */
+/* Estilos para dispositivos móviles (ancho máximo de 768px) */
 @media (max-width: 768px) {
-    /* Ajustes para el menú en móviles (lo mantenemos en fila) */
-    header ul {
-        flex-direction: row; /* Cambiado a fila en lugar de columna */
-        flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben */
-        justify-content: center; /* Centra los elementos del menú */
+    /* Ocultar el checkbox */
+    .menu-toggle {
+        display: none;
     }
 
-    header li {
-        margin: 10px 15px; /* Ajusta el margen entre elementos */
-    }
-
-    header .logo img {
-        height: 60px;
-        width: 60px;
-    }
-
-    .menu-icons {
-        margin-right: 0;
-        margin-top: 10px;
-    }
-
-    .menu-icons img {
-        width: 25px;
+    /* Estilos para el ícono de hamburguesa */
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
         height: 25px;
+        cursor: pointer;
+        z-index: 1001;
+        position: absolute;
+        top: 20px;
+        left: 20px;
     }
 
-    /* Ajustes para el fondo */
+    .hamburger .line {
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+
+    /* Ocultar el menú principal y las banderas en móviles */
+    .menu-container {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px; /* Ajusta según la altura del header */
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro */
+        z-index: 1000;
+        padding: 20px 0;
+        transition: transform 0.3s ease-in-out; /* Animación suave */
+        transform: translateY(-100%); /* Inicialmente, el menú está fuera de la pantalla */
+    }
+
+    /* Mostrar el menú cuando el checkbox está marcado */
+    .menu-toggle:checked ~ .menu-container {
+        display: flex;
+        transform: translateY(0); /* Muestra el menú deslizándolo hacia abajo */
+    }
+
+    /* Estilos para los elementos del menú en móviles */
+    .menu-container .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-container .menu li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .menu-container .menu li a {
+        font-size: 24px; /* Tamaño más grande para móviles */
+        color: white;
+    }
+
+    /* Cerrar el menú al hacer clic en un enlace */
+    .menu-container .menu li a:focus ~ .menu-container {
+        display: none;
+    }
+
+    /* Estilos para las banderas de idioma en móviles */
+    .menu-container .menu-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .menu-container .menu-icons a {
+        margin: 0 10px;
+    }
+
+    .menu-container .menu-icons img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Ajustes para el fondo en móviles */
     .Fondo {
-        height: 50vh;
+        height: 50vh; /* Reduce la altura del fondo en móviles */
     }
 
     /* Ajustes para las secciones 1 y 3 */
