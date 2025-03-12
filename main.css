@@ -244,7 +244,6 @@ footer {
 }
 
 /* Estilos para dispositivos móviles (ancho máximo de 768px) */
-/* Estilos para dispositivos móviles (ancho máximo de 768px) */
 @media (max-width: 768px) {
     /* Ocultar el checkbox */
     .menu-toggle {
@@ -383,5 +382,126 @@ footer {
 
     footer p {
         margin: 5px 0;
+    }
+}
+
+/* Estilos para dispositivos móviles en orientación horizontal (pantalla ancha) */
+@media (max-width: 768px) and (orientation: landscape) {
+    /* Ajustes para el menú en orientación horizontal */
+    .menu-container {
+        flex-direction: row; /* Mostrar el menú en fila */
+        align-items: center; /* Centrar verticalmente */
+        justify-content: center; /* Centrar horizontalmente */
+        padding: 10px 0; /* Reducir el padding */
+    }
+
+    .menu-container .menu {
+        flex-direction: row; /* Mostrar los elementos del menú en fila */
+        align-items: center; /* Centrar verticalmente */
+        justify-content: center; /* Centrar horizontalmente */
+        flex-wrap: wrap; /* Permitir que los elementos se envuelvan si no caben */
+    }
+
+    .menu-container .menu li {
+        margin: 0 10px; /* Reducir el margen entre elementos */
+    }
+
+    .menu-container .menu li a {
+        font-size: 18px; /* Reducir el tamaño de la fuente */
+    }
+
+    /* Ajustes para las banderas de idioma en orientación horizontal */
+    .menu-container .menu-icons {
+        flex-direction: row; /* Mostrar las banderas en fila */
+        margin-top: 0; /* Eliminar el margen superior */
+        margin-left: 20px; /* Añadir un margen izquierdo para separar del menú */
+    }
+
+    .menu-container .menu-icons a {
+        margin: 0 5px; /* Reducir el margen entre banderas */
+    }
+
+    .menu-container .menu-icons img {
+        width: 20px; /* Reducir el tamaño de las banderas */
+        height: 20px;
+    }
+
+    /* Ajustes para el fondo en orientación horizontal */
+    .Fondo {
+        height: 60vh; /* Aumentar la altura del fondo para pantallas anchas */
+    }
+
+    /* Ajustes para las secciones 1 y 3 en orientación horizontal */
+    .seccion1, .seccion3 {
+        min-height: 300px; /* Reducir la altura de las secciones */
+    }
+
+    .seccion1 img, .seccion3 img {
+        height: 300px; /* Reducir la altura de las imágenes */
+    }
+
+    .seccion1 video, .seccion3 video {
+        width: 70%; /* Reducir el ancho del video para pantallas anchas */
+    }
+
+    /* Ajustes para la sección 2 en orientación horizontal */
+    .seccion2 h1 {
+        font-size: 22px; /* Reducir el tamaño del título */
+    }
+
+    .seccion2 p {
+        font-size: 14px; /* Reducir el tamaño del texto */
+    }
+
+    /* Ajustes para la sección 4 en orientación horizontal */
+    .seccion4 {
+        grid-template-columns: 1fr 1fr; /* Mostrar dos columnas en pantallas anchas */
+    }
+
+    .grid-item img {
+        height: 120px; /* Reducir la altura de las imágenes */
+    }
+
+    /* Ajustes para el footer en orientación horizontal */
+    footer {
+        flex-direction: row; /* Mostrar el footer en fila */
+        justify-content: space-around; /* Distribuir el espacio */
+    }
+
+    footer p {
+        margin: 0 10px; /* Añadir margen horizontal entre los párrafos */
+    }
+}
+
+/* Estilos para desktop (ancho mínimo de 769px) */
+@media (min-width: 769px) {
+    /* Ocultar el ícono de hamburguesa en desktop */
+    .hamburger {
+        display: none;
+    }
+
+    /* Mostrar el menú y las banderas en fila */
+    .menu-container {
+        display: flex;
+        position: static;
+        background-color: transparent;
+        padding: 0;
+        transform: translateY(0); /* Restablece la transformación en desktop */
+    }
+
+    .menu-container .menu {
+        flex-direction: row;
+    }
+
+    .menu-container .menu li {
+        margin: 0 15px;
+    }
+
+    .menu-container .menu li a {
+        font-size: 30px; /* Tamaño original para desktop */
+    }
+
+    .menu-container .menu-icons {
+        margin-top: 0;
     }
 }
