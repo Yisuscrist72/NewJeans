@@ -240,13 +240,15 @@ footer {
 }
 
 @media (max-width: 768px) {
+    /* Ajustes para el menú en móviles (lo mantenemos en fila) */
     header ul {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row; /* Cambiado a fila en lugar de columna */
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben */
+        justify-content: center; /* Centra los elementos del menú */
     }
 
     header li {
-        margin: 10px 0;
+        margin: 10px 15px; /* Ajusta el margen entre elementos */
     }
 
     header .logo img {
@@ -264,39 +266,52 @@ footer {
         height: 25px;
     }
 
+    /* Ajustes para el fondo */
     .Fondo {
         height: 50vh;
     }
 
+    /* Ajustes para las secciones 1 y 3 */
     .seccion1, .seccion3 {
-        min-height: 400px; /* Ajuste para móviles */
+        min-height: 400px;
     }
 
     .seccion1 img, .seccion3 img {
-        height: 400px; /* Ajuste para móviles */
+        height: 400px;
     }
 
     .seccion1 video, .seccion3 video {
         width: 100%; /* Ocupa el 100% del ancho en móviles */
     }
 
+    /* Ajustes para la sección 2 (centrar el título y el texto) */
+    .seccion2 {
+        padding: 0 20px; /* Añade un padding lateral para que no esté pegado a los bordes */
+    }
+
     .seccion2 h1 {
-        font-size: 24px; /* Tamaño más pequeño para móviles */
+        font-size: 24px;
+        text-align: center; /* Centra el título */
+        margin: 0 20px; /* Añade un margen lateral para que no esté pegado a los bordes */
     }
 
     .seccion2 p {
-        font-size: 16px; /* Tamaño más pequeño para móviles */
+        font-size: 16px;
+        text-align: center; /* Centra el texto */
+        margin: 0 20px; /* Añade un margen lateral para que no esté pegado a los bordes */
     }
 
+    /* Ajustes para la sección 4 (grid de una columna) */
     .seccion4 {
-        grid-template-columns: 1fr; /* Una sola columna en móviles */
+        grid-template-columns: 1fr;
     }
 
     .grid-item img {
-        height: 150px; /* Ajuste para móviles */
+        height: 150px;
         margin-top: 20px;
     }
 
+    /* Ajustes para el footer */
     footer {
         flex-direction: column;
         text-align: center;
