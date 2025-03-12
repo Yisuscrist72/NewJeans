@@ -473,35 +473,3 @@ footer {
     }
 }
 
-/* Estilos para desktop (ancho mínimo de 769px) */
-@media (min-width: 769px) {
-    /* Ocultar el ícono de hamburguesa en desktop */
-    .hamburger {
-        display: none;
-    }
-
-    /* Mostrar el menú y las banderas en fila */
-    .menu-container {
-        display: flex;
-        position: static;
-        background-color: transparent;
-        padding: 0;
-        transform: translateY(0); /* Restablece la transformación en desktop */
-    }
-
-    .menu-container .menu {
-        flex-direction: row;
-    }
-
-    .menu-container .menu li {
-        margin: 0 15px;
-    }
-
-    .menu-container .menu li a {
-        font-size: 30px; /* Tamaño original para desktop */
-    }
-
-    .menu-container .menu-icons {
-        margin-top: 0;
-    }
-}
