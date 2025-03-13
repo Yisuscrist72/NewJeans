@@ -1,305 +1,342 @@
+/* Define una fuente personalizada llamada "Village" */
 @font-face {
     font-family: Village;
     src: url(fonts/Village-wLn3.ttf);
 }
 
+/* Define una fuente personalizada llamada "StarBorn" */
 @font-face {
     font-family: StarBorn;
     src: url(fonts/Starborn.ttf);
 }
 
+/* Reset básico para eliminar márgenes y padding predeterminados */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Incluye padding y borde en el ancho y alto */
 }
 
+/* Estilos generales del cuerpo de la página */
 body {
-    background-color: aliceblue;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aliceblue; /* Fondo de color azul claro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente predeterminada */
 }
 
+/* Estilos para el encabezado */
 header {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Village, sans-serif;
+    position: absolute; /* Posiciona el header de manera absoluta */
+    width: 100%; /* Ocupa el 100% del ancho */
+    display: flex; /* Usa flexbox para alinear elementos */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    font-family: Village, sans-serif; /* Usa la fuente personalizada "Village" */
 }
 
+/* Estilos para la lista no ordenada dentro del header */
 header ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Alinea los elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos */
 }
 
+/* Estilos para los elementos de la lista */
 header li {
-    margin: 0 15px;
+    margin: 0 15px; /* Añade margen horizontal entre elementos */
 }
 
+/* Estilos para los enlaces dentro de la lista */
 header li a {
-    position: relative;
-    color: white;
-    text-decoration: none;
-    font-size: 30px;
-    letter-spacing: 2px;
-    transition: color 0.3s ease-in-out;
+    position: relative; /* Permite posicionar elementos hijos de manera relativa */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 30px; /* Tamaño de la fuente */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    transition: color 0.3s ease-in-out; /* Transición suave para el color */
 }
 
+/* Efecto de subrayado para los enlaces (excepto el logo) */
 header li a:not(.logo a)::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 0;
-    height: 3px;
-    background-color: #ffcc00;
-    transition: width 0.3s ease-in-out;
+    content: ""; /* Crea un pseudo-elemento */
+    position: absolute; /* Posiciona el pseudo-elemento de manera absoluta */
+    left: 0; /* Alinea a la izquierda */
+    bottom: -5px; /* Coloca debajo del texto */
+    width: 0; /* Ancho inicial de 0 */
+    height: 3px; /* Altura del subrayado */
+    background-color: #ffcc00; /* Color del subrayado */
+    transition: width 0.3s ease-in-out; /* Transición suave para el ancho */
 }
 
+/* Efecto de subrayado al hacer hover */
 header li a:not(.logo a):hover::after {
-    width: 100%;
+    width: 100%; /* Ancho del subrayado al 100% */
 }
 
+/* Estilos para el enlace del logo */
 header .logo a {
-    text-decoration: none;
+    text-decoration: none; /* Elimina el subrayado */
 }
 
+/* Estilos para la imagen del logo */
 header .logo img {
-    height: 80px;
-    width: 80px;
+    height: 80px; /* Altura de la imagen */
+    width: 80px; /* Ancho de la imagen */
 }
 
+/* Contenedor de íconos del menú */
 .menu-icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 35px;
+    display: flex; /* Usa flexbox para alinear íconos */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    margin-right: 35px; /* Margen a la derecha */
 }
 
+/* Estilos para los enlaces de los íconos */
 .menu-icons a {
-    margin-left: 15px;
-    color: white;
-    text-decoration: none;
+    margin-left: 15px; /* Margen entre íconos */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
 }
 
+/* Estilos para las imágenes de los íconos */
 .menu-icons img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease-in-out;
+    width: 30px; /* Ancho de la imagen */
+    height: 30px; /* Altura de la imagen */
+    transition: transform 0.3s ease-in-out; /* Transición suave para escalar */
 }
 
+/* Efecto de escala al hacer hover en los íconos */
 .menu-icons img:hover {
-    transform: scale(1.5);
+    transform: scale(1.5); /* Escala la imagen al 150% */
 }
 
+/* Estilos para el botón de alternar menú (no visible por defecto) */
 .menu-toggle {
-    display: none;
+    display: none; /* Oculta el botón */
 }
 
+/* Estilos para el contenido principal */
 main {
-    background-color: aliceblue;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    height: 200vh;
+    background-color: aliceblue; /* Fondo de color azul claro */
+    background-attachment: fixed; /* Fija la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el espacio */
+    background-position: center; /* Centra la imagen */
+    height: 200vh; /* Altura de 200% del viewport */
 }
 
+/* Sección con fondo fijo */
 .Fondo {
-    height: 100vh;
-    background-image: url('img_principal/FondoPrincipal.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    height: 100vh; /* Altura de 100% del viewport */
+    background-image: url('img_principal/FondoPrincipal.jpg'); /* Imagen de fondo */
+    background-attachment: fixed; /* Fija la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el espacio */
+    background-position: center; /* Centra la imagen */
 }
 
+/* Estilos para la sección 1 */
 .seccion1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    min-height: 600px; /* Cambiado a min-height */
-    margin-bottom: 40px;
+    display: flex; /* Usa flexbox para alinear elementos */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    position: relative; /* Permite posicionar elementos hijos de manera absoluta */
+    min-height: 600px; /* Altura mínima de 600px */
+    margin-bottom: 40px; /* Margen inferior */
 }
 
+/* Estilos para la imagen de la sección 1 */
 .seccion1 img {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    width: 100%; /* Ocupa el 100% del ancho */
+    height: 600px; /* Altura fija de 600px */
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el espacio */
+    position: absolute; /* Posiciona la imagen de manera absoluta */
+    top: 0; /* Alinea en la parte superior */
+    left: 0; /* Alinea en la parte izquierda */
+    z-index: 1; /* Capa inferior */
 }
 
+/* Estilos para el video de la sección 1 */
 .seccion1 video {
-    z-index: 2;
-    max-width: 100%;
-    max-height: 100%;
-    width: 50%;
-    height: auto;
-    position: relative;
+    z-index: 2; /* Capa superior */
+    max-width: 100%; /* Ancho máximo del 100% */
+    max-height: 100%; /* Altura máxima del 100% */
+    width: 50%; /* Ancho del 50% */
+    height: auto; /* Altura automática */
+    position: relative; /* Posiciona el video de manera relativa */
 }
 
+/* Estilos para la sección 2 */
 .seccion2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    display: flex; /* Usa flexbox para alinear elementos */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-direction: column; /* Alinea los elementos en columna */
+    margin-top: 20px; /* Margen superior */
+    margin-bottom: 40px; /* Margen inferior */
 }
 
+/* Estilos para el título de la sección 2 */
 .seccion2 h1 {
-    font-family: StarBorn, sans-serif;
-    margin-bottom: 20px;
+    font-family: StarBorn, sans-serif; /* Usa la fuente personalizada "StarBorn" */
+    margin-bottom: 20px; /* Margen inferior */
 }
 
+/* Estilos para el párrafo de la sección 2 */
 .seccion2 p {
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px; /* Tamaño de la fuente */
+    text-align: center; /* Centra el texto */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente predeterminada */
 }
 
+/* Estilos para la sección 3 */
 .seccion3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    min-height: 600px; /* Cambiado a min-height */
+    display: flex; /* Usa flexbox para alinear elementos */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    position: relative; /* Permite posicionar elementos hijos de manera absoluta */
+    min-height: 600px; /* Altura mínima de 600px */
 }
 
+/* Estilos para la imagen de la sección 3 */
 .seccion3 img {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    width: 100%; /* Ocupa el 100% del ancho */
+    height: 600px; /* Altura fija de 600px */
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el espacio */
+    position: absolute; /* Posiciona la imagen de manera absoluta */
+    top: 0; /* Alinea en la parte superior */
+    left: 0; /* Alinea en la parte izquierda */
+    z-index: 1; /* Capa inferior */
 }
 
+/* Estilos para el video de la sección 3 */
 .seccion3 video {
-    z-index: 2;
-    max-width: 100%;
-    max-height: 100%;
-    width: 50%;
-    height: auto;
-    position: relative;
+    z-index: 2; /* Capa superior */
+    max-width: 100%; /* Ancho máximo del 100% */
+    max-height: 100%; /* Altura máxima del 100% */
+    width: 50%; /* Ancho del 50% */
+    height: auto; /* Altura automática */
+    position: relative; /* Posiciona el video de manera relativa */
 }
 
+/* Estilos para la sección 4 */
 .seccion4 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 30px;
+    display: grid; /* Usa grid para organizar elementos */
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    gap: 20px; /* Espacio entre elementos */
+    padding: 30px; /* Relleno interno */
 }
 
+/* Estilos para los elementos de la cuadrícula en la sección 4 */
 .seccion4 .grid-item {
-    background-color: #e0f2fd;
-    padding: 20px;
-    border: 1px solid #ccc;
+    background-color: #e0f2fd; /* Fondo de color azul claro */
+    padding: 20px; /* Relleno interno */
+    border: 1px solid #ccc; /* Borde gris */
 }
 
+/* Estilos para el párrafo dentro de los elementos de la cuadrícula */
 .grid-item p {
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 20px;
+    font-size: 20px; /* Tamaño de la fuente */
+    text-align: center; /* Centra el texto */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente predeterminada */
+    margin-top: 20px; /* Margen superior */
 }
 
+/* Estilos para el título dentro de los elementos de la cuadrícula */
 .grid-item h2 {
-    font-family: StarBorn, sans-serif;
-    text-align: center;
+    font-family: StarBorn, sans-serif; /* Usa la fuente personalizada "StarBorn" */
+    text-align: center; /* Centra el texto */
 }
 
+/* Estilos para la lista dentro de los elementos de la cuadrícula */
 .grid-item ul {
-    margin-top: 20px;
-    padding: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    list-style: none;
-    font-weight: bold;
+    margin-top: 20px; /* Margen superior */
+    padding: 10px; /* Relleno interno */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente predeterminada */
+    text-align: center; /* Centra el texto */
+    list-style: none; /* Elimina los puntos de la lista */
+    font-weight: bold; /* Texto en negrita */
 }
 
+/* Estilos para los elementos de la lista */
 .grid-item ul li {
-    margin-top: 10px;
+    margin-top: 10px; /* Margen superior entre elementos */
 }
 
+/* Estilos para la imagen dentro de los elementos de la cuadrícula */
 .grid-item img {
-    width: 100%;
-    height: 200px;
-    margin-top: 50px;
+    width: 100%; /* Ocupa el 100% del ancho */
+    height: 200px; /* Altura fija de 200px */
+    margin-top: 50px; /* Margen superior */
 }
 
+/* Estilos para el pie de página */
 footer {
-    background-color: #333;
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #333; /* Fondo de color gris oscuro */
+    color: white; /* Color del texto */
+    display: flex; /* Usa flexbox para alinear elementos */
+    justify-content: space-around; /* Distribuye el espacio entre elementos */
+    align-items: center; /* Centra verticalmente */
+    padding: 20px; /* Relleno interno */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente predeterminada */
 }
 
+/* Estilos para pantallas pequeñas (responsive) */
 @media (max-width: 768px) {
     /* Ajustes para las secciones 1 y 3 */
     .seccion1, .seccion3 {
-        min-height: 400px;
+        min-height: 400px; /* Altura mínima reducida */
     }
 
     .seccion1 img, .seccion3 img {
-        height: 400px;
+        height: 400px; /* Altura de la imagen reducida */
     }
 
     .seccion1 video, .seccion3 video {
         width: 100%; /* Ocupa el 100% del ancho en móviles */
     }
 
-    /* Ajustes para la sección 2 (centrar el título y el texto) */
+    /* Ajustes para la sección 2 */
     .seccion2 {
-        padding: 0 20px; /* Añade un padding lateral para que no esté pegado a los bordes */
+        padding: 0 20px; /* Añade un padding lateral */
     }
 
     .seccion2 h1 {
-        font-size: 24px;
+        font-size: 24px; /* Tamaño de fuente reducido */
         text-align: center; /* Centra el título */
-        margin: 0 20px; /* Añade un margen lateral para que no esté pegado a los bordes */
+        margin: 0 20px; /* Añade un margen lateral */
     }
 
     .seccion2 p {
-        font-size: 16px;
+        font-size: 16px; /* Tamaño de fuente reducido */
         text-align: center; /* Centra el texto */
-        margin: 0 20px; /* Añade un margen lateral para que no esté pegado a los bordes */
+        margin: 0 20px; /* Añade un margen lateral */
     }
 
-    /* Ajustes para la sección 4 (grid de una columna) */
+    /* Ajustes para la sección 4 */
     .seccion4 {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Una sola columna en móviles */
     }
 
     .grid-item img {
-        height: 150px;
-        margin-top: 20px;
+        height: 150px; /* Altura de la imagen reducida */
+        margin-top: 20px; /* Margen superior reducido */
     }
 
-    /* Ajustes para el footer */
+    /* Ajustes para el pie de página */
     footer {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column; /* Alinea elementos en columna */
+        text-align: center; /* Centra el texto */
     }
 
     footer p {
-        margin: 5px 0;
+        margin: 5px 0; /* Margen entre párrafos */
     }
 
+    /* Ajustes para el menú en móviles */
     .menu-container .menu li a {
-        font-size: 22px; /* Reducir ligeramente el tamaño de la fuente si es necesario */
+        font-size: 22px; /* Tamaño de fuente reducido */
     }
 
     .menu-container {
-        padding: 10px 0; /* Reducir el padding del menú */
+        padding: 10px 0; /* Relleno interno reducido */
     }
 }
-
