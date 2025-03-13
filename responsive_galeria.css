@@ -1,0 +1,67 @@
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        background-image: url('img_galeria/Fondo_Galeria.jpeg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr; /* Cambia a 1 columna en móviles */
+        gap: 15px; /* Reduce el espacio entre las imágenes */
+        padding: 10px; /* Reduce el padding */
+    }
+
+    .imagen-container img {
+        height: 200px; /* Reduce la altura de las imágenes */
+    }
+
+    .titulo-imagen {
+        font-size: 16px; /* Reduce el tamaño de la fuente del título */
+    }
+
+    footer {
+        flex-direction: column; /* Cambia la dirección del footer a columna */
+        text-align: center; /* Centra el texto en el footer */
+        padding: 15px; /* Ajusta el padding */
+    }
+
+    footer p {
+        margin: 5px 0; /* Ajusta el margen entre los párrafos del footer */
+    }
+
+    /* Nuevas reglas para el menú */
+    .menu-container .menu li a {
+        font-size: 22px; /* Reducir ligeramente el tamaño de la fuente si es necesario */
+    }
+
+    .menu-container {
+        padding: 10px 0; /* Reducir el padding del menú */
+    }
+}
+
+/* Estilos para pantallas muy pequeñas (ej. smartphones pequeños) */
+@media (max-width: 480px) {
+    .galeria {
+        grid-template-columns: 1fr; /* Mantiene 1 columna en pantallas muy pequeñas */
+        gap: 10px; /* Reduce aún más el espacio entre las imágenes */
+    }
+
+    .imagen-container img {
+        height: 150px; /* Reduce aún más la altura de las imágenes */
+    }
+
+    .titulo-imagen {
+        font-size: 14px; /* Reduce aún más el tamaño de la fuente del título */
+    }
+
+    /* Nuevas reglas para el menú en pantallas muy pequeñas */
+    .menu-container .menu li a {
+        font-size: 20px; /* Reducir aún más el tamaño de la fuente */
+    }
+
+    .menu-container {
+        padding: 8px 0; /* Reducir aún más el padding del menú */
+    }
+}
