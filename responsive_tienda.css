@@ -45,3 +45,87 @@
     }
 
 }
+
+/* Estilos para tablets en orientación horizontal (769px - 1199px) */
+@media (min-width: 769px) and (max-width: 1199px) and (orientation: landscape) {
+    /* Ajustes para el contenido principal */
+    .tienda {
+        padding: 30px; /* Espaciado interno intermedio */
+    }
+
+    .productos {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en tablets */
+        gap: 25px; /* Espacio entre las tarjetas */
+    }
+
+    .tarjeta {
+        padding: 18px; /* Espaciado interno de las tarjetas */
+    }
+
+    .tarjeta h3 {
+        font-size: 19px; /* Tamaño del título */
+    }
+
+    .tarjeta p {
+        font-size: 17px; /* Tamaño del precio */
+    }
+
+    .boton-compra {
+        padding: 9px 14px; /* Espaciado del botón */
+        font-size: 15px; /* Tamaño del texto del botón */
+    }
+
+    /* Ajustes para el header */
+    header li a {
+        font-size: 26px; /* Tamaño reducido del texto del menú */
+    }
+
+    /* Ajustes para el footer */
+    footer {
+        padding: 15px; /* Espaciado interno */
+    }
+}
+
+/* Estilos para tablets en orientación vertical (769px - 1199px) */
+@media (min-width: 769px) and (max-width: 1199px) and (orientation: portrait) {
+    /* Ajustes para el contenido principal */
+    .tienda {
+        padding: 25px; /* Espaciado interno */
+    }
+
+    .productos {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en tablets verticales */
+        gap: 22px; /* Espacio entre las tarjetas */
+    }
+
+    .tarjeta {
+        padding: 16px; /* Espaciado interno de las tarjetas */
+    }
+
+    .tarjeta h3 {
+        font-size: 18px; /* Tamaño del título */
+    }
+
+    .tarjeta p {
+        font-size: 16px; /* Tamaño del precio */
+    }
+
+    .boton-compra {
+        padding: 8px 13px; /* Espaciado del botón */
+        font-size: 14px; /* Tamaño del texto del botón */
+    }
+
+    /* Ajustes para el header */
+    header li a {
+        font-size: 24px; /* Tamaño reducido del texto del menú */
+    }
+
+    header li {
+        margin: 0 10px; /* Reducir el margen entre elementos del menú */
+    }
+
+    /* Ajustes para el footer */
+    footer {
+        padding: 12px; /* Espaciado interno */
+    }
+}

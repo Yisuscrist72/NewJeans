@@ -65,3 +65,75 @@
         padding: 8px 0; /* Reducir aún más el padding del menú */
     }
 }
+
+/* Estilos para tablet en orientación landscape */
+@media (min-width: 769px) and (max-width: 1199px) and (orientation: landscape) {
+    body {
+        background-image: url('img_galeria/Fondo_Galeria.jpeg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas en tablet landscape */
+        gap: 25px; /* Espacio entre las imágenes */
+        padding: 20px; /* Padding ajustado */
+        max-width: 95%; /* Maximiza el espacio disponible */
+    }
+
+    .imagen-container img {
+        height: 220px; /* Altura ajustada para orientación landscape */
+    }
+
+    .titulo-imagen {
+        font-size: 17px; /* Tamaño de fuente optimizado */
+    }
+
+    header li a {
+        font-size: 26px; /* Tamaño de fuente reducido para el menú */
+    }
+
+    header .logo img {
+        height: 70px;
+        width: 70px;
+    }
+
+    footer {
+        padding: 15px; /* Reduce ligeramente el padding */
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1199px) and (orientation: portrait) {
+    body {
+        background-image: url('img_galeria/Fondo_Galeria.jpeg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .imagen-container img {
+        height: 280px; /* Mayor altura para mejor visualización */
+    }
+
+    .titulo-imagen {
+        font-size: 18px;
+    }
+
+    header li a {
+        font-size: 28px;
+    }
+
+    header .logo img {
+        height: 75px;
+        width: 75px;
+    }
+}

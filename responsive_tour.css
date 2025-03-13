@@ -78,3 +78,104 @@
         padding: 5px 0; /* Reducir aún más el padding del menú */
     }
 }
+
+@media (min-width: 769px) and (max-width: 1199px) and (orientation: landscape) {
+    .Fondo {
+        height: 110vh; 
+    }
+
+    .tour-calendar {
+        width: 90%; 
+        padding: 18px;
+    }
+
+    .tour-calendar h2 {
+        font-size: 28px; 
+        margin-bottom: 18px;
+    }
+
+    .tour-calendar table {
+        font-size: 16px; 
+    }
+
+    .tour-calendar th,
+    .tour-calendar td {
+        padding: 10px;
+        font-size: 22px; 
+    }
+
+    .tour-calendar .buy-tickets {
+        padding: 7px 14px;
+        font-size: 16px;
+    }
+
+    header li a {
+        font-size: 24px; 
+    }
+
+    header .logo img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .menu-icons img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1199px) and (orientation: portrait) {
+    .Fondo {
+        height: 100vh;
+    }
+
+    .tour-calendar {
+        width: 92%;
+        padding: 16px;
+    }
+
+    .tour-calendar h2 {
+        font-size: 26px;
+        margin-bottom: 16px;
+    }
+
+    .tour-calendar table {
+        font-size: 15px;
+    }
+
+    .tour-calendar th,
+    .tour-calendar td {
+        padding: 9px;
+        font-size: 20px; 
+    }
+
+    .tour-calendar .buy-tickets {
+        padding: 7px 14px;
+        font-size: 15px;
+    }
+
+
+    header li a {
+        font-size: 22px;
+        letter-spacing: 1px; 
+    }
+
+    header li {
+        margin: 0 10px; 
+    }
+
+    header .logo img {
+        height: 65px;
+        width: 65px;
+    }
+
+    .menu-icons {
+        margin-right: 25px;
+    }
+
+    .menu-icons img {
+        width: 24px;
+        height: 24px;
+    }
+}
