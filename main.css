@@ -342,6 +342,66 @@ footer {
     }
 }
 
+/* Estilos para móviles con ancho máximo de 375px en orientación vertical */
+@media (max-width: 375px) and (orientation: portrait) {
+    /* Ajustes para las secciones 1 y 3 */
+    .seccion1, .seccion3 {
+        min-height: 300px; /* Altura mínima reducida para pantallas pequeñas */
+    }
+
+    .seccion1 img, .seccion3 img {
+        height: 300px; /* Altura de la imagen reducida para pantallas pequeñas */
+    }
+
+    .seccion1 video, .seccion3 video {
+        width: 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
+    }
+
+    /* Ajustes para la sección 2 */
+    .seccion2 h1 {
+        font-size: 20px; /* Tamaño de fuente reducido para pantallas pequeñas */
+        text-align: center; /* Centra el título */
+        margin: 0 10px; /* Añade un margen lateral reducido */
+    }
+
+    .seccion2 p {
+        font-size: 14px; /* Tamaño de fuente reducido para pantallas pequeñas */
+        text-align: center; /* Centra el texto */
+        margin: 0 10px; /* Añade un margen lateral reducido */
+    }
+
+    /* Ajustes para la sección 4 */
+    .seccion4 {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+        padding: 10px; /* Relleno interno reducido */
+    }
+
+    .grid-item img {
+        height: 120px; /* Altura de la imagen reducida para pantallas pequeñas */
+        margin-top: 15px; /* Margen superior reducido */
+    }
+
+    /* Ajustes para el pie de página */
+    footer {
+        flex-direction: column; /* Alinea elementos en columna */
+        text-align: center; /* Centra el texto */
+        padding: 10px; /* Relleno interno reducido */
+    }
+
+    footer p {
+        margin: 5px 0; /* Margen entre párrafos reducido */
+    }
+
+    /* Ajustes para el menú en pantallas pequeñas */
+    .menu-container .menu li a {
+        font-size: 18px; /* Tamaño de fuente reducido para pantallas pequeñas */
+    }
+
+    .menu-container {
+        padding: 5px 0; /* Relleno interno reducido */
+    }
+}
+
 /* Estilos para móviles en orientación horizontal (ancho máximo de 768px) */
 @media (max-width: 768px) and (orientation: landscape) {
     /* Ajustes para el encabezado */

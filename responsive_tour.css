@@ -48,6 +48,56 @@
     }
 }
 
+@media (max-width: 375px) and (orientation: portrait) {
+    .Fondo {
+        height: 100vh; /* Ajusta la altura automáticamente */
+    }
+
+    .tour-calendar {
+        width: 95%; /* Aumenta el ancho para aprovechar mejor el espacio */
+        padding: 10px; /* Reduce el padding */
+    }
+
+    .tour-calendar h2 {
+        font-size: 22px; /* Reduce el tamaño de la fuente */
+        margin-bottom: 10px; /* Reduce el margen inferior */
+    }
+
+    .tour-calendar table {
+        font-size: 12px; /* Reduce el tamaño de la fuente de la tabla */
+    }
+
+    .tour-calendar th,
+    .tour-calendar td {
+        padding: 6px; /* Reduce el padding de las celdas */
+        font-size: 14px; /* Reduce el tamaño de la fuente */
+    }
+
+    .tour-calendar .buy-tickets {
+        padding: 5px 10px; /* Reduce el padding del botón */
+        font-size: 12px; /* Reduce el tamaño de la fuente del botón */
+    }
+
+    footer {
+        flex-direction: column; /* Cambia la dirección a columna */
+        text-align: center; /* Centra el texto */
+        padding: 10px; /* Reduce el padding */
+    }
+
+    footer p {
+        margin: 5px 0; /* Ajusta los márgenes de los párrafos */
+    }
+
+    /* Añade estas reglas para ajustar el menú */
+    .menu-container .menu li a {
+        font-size: 20px; /* Reducir ligeramente el tamaño de la fuente */
+    }
+
+    .menu-container {
+        padding: 8px 0; /* Reducir el padding del menú */
+    }
+}
+
 @media (max-width: 768px) and (orientation: landscape) {
     .Fondo {
         height: 180vh; /* Ajusta la altura del fondo */

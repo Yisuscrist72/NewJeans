@@ -78,6 +78,75 @@
     }
 }
 
+/* Ajustes específicos para móviles pequeños (max-width: 375px) en orientación portrait */
+@media (max-width: 375px) and (orientation: portrait) {
+    body {
+        font-size: 13px; /* Reducir aún más el tamaño de la fuente para móviles pequeños */
+    }
+
+    /* Ajustes para el fondo de la sección principal */
+    .Fondo {
+        height: 75vh; /* Reducir la altura del fondo para móviles pequeños */
+    }
+
+    /* Ajustes para la sección 1 */
+    .seccion1 {
+        height: 35vh; /* Reducir la altura de la sección 1 */
+        margin-bottom: 15px; /* Reducir el margen inferior */
+    }
+
+    .CD {
+        width: 60%; /* Aumentar el tamaño del CD para que sea más visible en móviles pequeños */
+    }
+
+    /* Ajustes para las secciones 2 y 3 */
+    .seccion2, .seccion3 {
+        padding: 10px; /* Reducir el padding */
+    }
+
+    .seccion2 .grid-item, .seccion3 .grid-item {
+        padding: 10px; /* Reducir el padding de los elementos de la cuadrícula */
+    }
+
+    .seccion2 .grid-item h3, .seccion3 .grid-item h3 {
+        font-size: 16px; /* Reducir el tamaño de la fuente del título */
+    }
+
+    .seccion2 .grid-item p, .seccion3 .grid-item p {
+        font-size: 12px; /* Reducir el tamaño de la fuente del texto */
+    }
+
+    /* Ajustes para los contenedores de audio */
+    .audio-container {
+        gap: 8px; /* Reducir el espacio entre los elementos de audio */
+    }
+
+    .audio-item {
+        padding: 6px; /* Reducir el padding */
+    }
+
+    .audio-item h4 {
+        font-size: 12px; /* Reducir el tamaño de la fuente del título del audio */
+    }
+
+    /* Ajustes para el footer */
+    footer {
+        padding: 10px; /* Reducir el padding */
+    }
+
+    footer p {
+        margin: 3px 0; /* Reducir el margen entre los párrafos */
+    }
+
+    .menu-container .menu li a {
+        font-size: 20px; /* Reducir el tamaño de la fuente del menú */
+    }
+
+    .menu-container {
+        padding: 8px 0; /* Reducir el padding del menú */
+    }
+}
+
 /* Ajustes específicos para móviles en orientación horizontal (landscape) */
 @media (max-width: 768px) and (orientation: landscape) {
     body {

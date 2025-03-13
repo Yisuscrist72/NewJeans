@@ -41,6 +41,48 @@
     }
 }
 
+@media (max-width: 375px) and (orientation: portrait) {
+    body {
+        background-image: url('img_galeria/Fondo_Galeria.jpeg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr; /* 1 columna en móviles pequeños */
+        gap: 10px; /* Reduce aún más el espacio entre las imágenes */
+        padding: 5px; /* Reduce el padding */
+    }
+
+    .imagen-container img {
+        height: 180px; /* Reduce la altura de las imágenes para pantallas más pequeñas */
+    }
+
+    .titulo-imagen {
+        font-size: 14px; /* Reduce el tamaño de la fuente del título */
+    }
+
+    footer {
+        flex-direction: column; /* Cambia la dirección del footer a columna */
+        text-align: center; /* Centra el texto en el footer */
+        padding: 10px; /* Ajusta el padding */
+    }
+
+    footer p {
+        margin: 5px 0; /* Ajusta el margen entre los párrafos del footer */
+    }
+
+    /* Nuevas reglas para el menú */
+    .menu-container .menu li a {
+        font-size: 20px; /* Reducir ligeramente el tamaño de la fuente */
+    }
+
+    .menu-container {
+        padding: 8px 0; /* Reducir el padding del menú */
+    }
+}
+
 /* Estilos para dispositivos móviles en orientación landscape */
 @media (max-width: 768px) and (orientation: landscape) {
     body {

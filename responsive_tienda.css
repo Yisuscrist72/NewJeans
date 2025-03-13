@@ -46,6 +46,51 @@
 
 }
 
+@media (max-width: 375px) and (orientation: portrait) {
+    /* Ajustes para el contenido principal */
+    .tienda {
+        padding: 15px; /* Espaciado interno reducido */
+    }
+
+    .productos {
+        grid-template-columns: 1fr; /* Una columna en móviles pequeños */
+        gap: 15px; /* Espacio entre las tarjetas reducido */
+    }
+
+    .tarjeta {
+        padding: 10px; /* Espaciado interno de las tarjetas reducido */
+    }
+
+    .tarjeta h3 {
+        font-size: 16px; /* Tamaño del título reducido */
+    }
+
+    .tarjeta p {
+        font-size: 14px; /* Tamaño del precio reducido */
+    }
+
+    .boton-compra {
+        padding: 6px 10px; /* Espaciado del botón reducido */
+        font-size: 12px; /* Tamaño del texto del botón reducido */
+    }
+
+    /* Ajustes para el footer */
+    footer {
+        flex-direction: column; /* Apila los elementos del footer */
+        text-align: center; /* Centra el texto */
+        padding: 8px; /* Espaciado interno reducido */
+    }
+
+    /* Ajustes para el menú */
+    .menu-container .menu li a {
+        font-size: 20px; /* Reducir ligeramente el tamaño de la fuente */
+    }
+
+    .menu-container {
+        padding: 8px 0; /* Reducir el padding del menú */
+    }
+}
+
 @media (max-width: 768px) and (orientation: landscape) {
     /* Ajustes para el contenido principal */
     .tienda {
