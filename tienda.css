@@ -98,6 +98,11 @@ header .logo img {
     transform: scale(1.5); /* Aumenta el tamaño de la imagen al 150% */
 }
 
+.menu-toggle {
+    display: none;
+}
+
+
 .tienda {
     text-align: center;
     padding: 50px 20px;
