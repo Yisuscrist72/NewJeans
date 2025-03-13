@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 425px) and (orientation: portrait) {
     .Fondo {
         height: 100vh; /* Ajusta la altura automáticamente */
     }
@@ -48,6 +48,56 @@
     }
 }
 
+@media (max-width: 768px) and (orientation: landscape) {
+    .Fondo {
+        height: 180vh; /* Ajusta la altura del fondo */
+        background-position: top; /* Asegura que la imagen de fondo esté bien posicionada */
+    }
+
+    .tour-calendar {
+        width: 95%; /* Ocupa casi todo el ancho disponible */
+        padding: 15px; /* Reduce el padding para aprovechar el espacio */
+       
+    }
+
+    .tour-calendar h2 {
+        font-size: 24px; /* Reduce el tamaño del título */
+        margin-bottom: 15px; /* Reduce el margen inferior */
+    }
+
+    .tour-calendar table {
+        font-size: 14px; /* Reduce el tamaño de la fuente de la tabla */
+    }
+
+    .tour-calendar th {
+        padding: 10px; /* Reduce el padding de las celdas */
+        font-size: 18px; /* Reduce el tamaño de la fuente de los encabezados */
+    }
+
+    .tour-calendar td {
+        padding: 10px; /* Reduce el padding de las celdas */
+        font-size: 16px; /* Reduce el tamaño de la fuente del contenido */
+    }
+
+    .tour-calendar .buy-tickets {
+        padding: 8px 16px; /* Ajusta el padding del botón */
+        font-size: 14px; /* Reduce el tamaño de la fuente del botón */
+    }
+
+    /* Ajustes adicionales para mejorar la legibilidad */
+    .tour-calendar th,
+    .tour-calendar td {
+        white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    }
+
+    .tour-calendar td {
+        vertical-align: middle; /* Alinea el contenido verticalmente en las celdas */
+    }
+
+    .tour-calendar .buy-tickets {
+        white-space: nowrap; /* Evita que el texto del botón se divida */
+    }
+}
 
 
 @media (min-width: 769px) and (max-width: 1199px) and (orientation: landscape) {

@@ -1,5 +1,5 @@
 /* Estilos para dispositivos móviles */
-@media (max-width: 768px) {
+@media (max-width: 425px) and (orientation: portrait) {
     body {
         background-image: url('img_galeria/Fondo_Galeria.jpeg');
         background-attachment: fixed;
@@ -41,30 +41,44 @@
     }
 }
 
-/* Estilos para pantallas muy pequeñas (ej. smartphones pequeños) */
-@media (max-width: 480px) {
+/* Estilos para dispositivos móviles en orientación landscape */
+@media (max-width: 768px) and (orientation: landscape) {
+    body {
+        background-image: url('img_galeria/Fondo_Galeria.jpeg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
     .galeria {
-        grid-template-columns: 1fr; /* Mantiene 1 columna en pantallas muy pequeñas */
-        gap: 10px; /* Reduce aún más el espacio entre las imágenes */
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en landscape */
+        gap: 20px; /* Espacio entre las imágenes */
+        padding: 15px; /* Padding ajustado */
+        max-width: 95%; /* Maximiza el espacio disponible */
     }
 
     .imagen-container img {
-        height: 150px; /* Reduce aún más la altura de las imágenes */
+        height: 200px; /* Altura ajustada para orientación landscape */
     }
 
     .titulo-imagen {
-        font-size: 14px; /* Reduce aún más el tamaño de la fuente del título */
+        font-size: 16px; /* Tamaño de fuente optimizado */
     }
 
-    /* Nuevas reglas para el menú en pantallas muy pequeñas */
-    .menu-container .menu li a {
-        font-size: 20px; /* Reducir aún más el tamaño de la fuente */
+    header li a {
+        font-size: 24px; /* Tamaño de fuente reducido para el menú */
     }
 
-    .menu-container {
-        padding: 8px 0; /* Reducir aún más el padding del menú */
+    header .logo img {
+        height: 60px;
+        width: 60px;
+    }
+
+    footer {
+        padding: 15px; /* Reduce ligeramente el padding */
     }
 }
+
 
 /* Estilos para tablet en orientación landscape */
 @media (min-width: 769px) and (max-width: 1199px) and (orientation: landscape) {

@@ -1,5 +1,5 @@
-/* Estilos para dispositivos móviles (ancho máximo de 768px) */
-@media (max-width: 768px) {
+
+@media (max-width: 425px) and (orientation: portrait) {
 
     /* Ajustes para el contenido principal */
     .tienda {
@@ -44,6 +44,51 @@
         padding: 10px 0; /* Reducir el padding del menú */
     }
 
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+    /* Ajustes para el contenido principal */
+    .tienda {
+        padding: 25px; /* Espaciado interno */
+    }
+
+    .productos {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas horizontales pequeñas */
+        gap: 20px; /* Espacio entre las tarjetas */
+    }
+
+    .tarjeta {
+        padding: 15px; /* Espaciado interno de las tarjetas */
+    }
+
+    .tarjeta h3 {
+        font-size: 18px; /* Tamaño del título */
+    }
+
+    .tarjeta p {
+        font-size: 16px; /* Tamaño del precio */
+    }
+
+    .boton-compra {
+        padding: 8px 12px; /* Espaciado del botón */
+        font-size: 14px; /* Tamaño del texto del botón */
+    }
+
+    /* Ajustes para el header */
+    header li a {
+        font-size: 24px; /* Tamaño reducido del texto del menú */
+    }
+
+    header li {
+        margin: 0 10px; /* Reducir el margen entre elementos del menú */
+    }
+
+    /* Ajustes para el footer */
+    footer {
+        padding: 15px; /* Espaciado interno */
+        flex-direction: row; /* Mantener los elementos en fila */
+        text-align: center; /* Centrar el texto */
+    }
 }
 
 /* Estilos para tablets en orientación horizontal (769px - 1199px) */
