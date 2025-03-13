@@ -35,15 +35,13 @@
         padding: 10px; /* Espaciado interno */
     }
 
-    footer p {
-        margin: 5px 0; /* Espacio entre los párrafos */
-    }
 
     .menu-container .menu li a {
-        font-size: 20px; /* Reducir ligeramente el tamaño de la fuente si es necesario */
+        font-size: 15px; /* Reducir ligeramente el tamaño de la fuente si es necesario */
     }
 
     .menu-container {
         padding: 10px 0; /* Reducir el padding del menú */
     }
+
 }
