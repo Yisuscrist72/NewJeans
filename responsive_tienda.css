@@ -39,15 +39,10 @@
         margin: 5px 0; /* Espacio entre los párrafos */
     }
 
-    /* Ajustes para el menú en móviles */
-    .menu-container .menu li {
-        margin: 10px 0; /* Reducir el margen entre los elementos del menú */
-    }
-    
     .menu-container .menu li a {
         font-size: 20px; /* Reducir ligeramente el tamaño de la fuente si es necesario */
     }
-    
+
     .menu-container {
         padding: 10px 0; /* Reducir el padding del menú */
     }
