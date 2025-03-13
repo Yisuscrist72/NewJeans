@@ -29,7 +29,6 @@ La página estará diseñada para un grupo del género KPOP (Pop coreano) llamad
 - [Imgur](https://imgur.com/a/ITWS6jX)
 - [X (Twitter) - TokkiTim](https://x.com/tokkitim)
 
----
-Este proyecto es parte del módulo profesional de **Lenguaje de marcas**.
+
 
 
