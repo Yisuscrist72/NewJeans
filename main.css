@@ -178,6 +178,7 @@ main {
 .seccion2 h1 {
     font-family: StarBorn, sans-serif; /* Usa la fuente personalizada "StarBorn" */
     margin-bottom: 20px; /* Margen inferior */
+    text-align: center;
 }
 
 /* Estilos para el párrafo de la sección 2 */
@@ -369,6 +370,7 @@ footer {
     /* Ajustes para la sección 2 */
     .seccion2 h1 {
         font-size: 26px; /* Tamaño de fuente ajustado para tablets en vertical */
+        text-align: center;
     }
 
     .seccion2 p {
@@ -434,6 +436,7 @@ footer {
     /* Ajustes para la sección 2 */
     .seccion2 h1 {
         font-size: 28px; /* Tamaño de fuente ajustado para tablets en horizontal */
+        text-align: center;
     }
 
     .seccion2 p {
