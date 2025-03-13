@@ -340,3 +340,133 @@ footer {
         padding: 10px 0; /* Relleno interno reducido */
     }
 }
+
+/* Estilos para tablets en orientación vertical (ancho menor que alto) */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+    /* Ajustes para el encabezado */
+    header li a {
+        font-size: 22px; /* Tamaño de fuente reducido para tablets en vertical */
+    }
+
+    header .logo img {
+        height: 50px; /* Altura del logo reducida */
+        width: 50px; /* Ancho del logo reducido */
+    }
+
+    /* Ajustes para las secciones 1 y 3 */
+    .seccion1, .seccion3 {
+        min-height: 400px; /* Altura mínima ajustada para tablets en vertical */
+    }
+
+    .seccion1 img, .seccion3 img {
+        height: 400px; /* Altura de la imagen ajustada para tablets en vertical */
+    }
+
+    .seccion1 video, .seccion3 video {
+        width: 80%; /* Ancho del video ajustado para tablets en vertical */
+    }
+
+    /* Ajustes para la sección 2 */
+    .seccion2 h1 {
+        font-size: 26px; /* Tamaño de fuente ajustado para tablets en vertical */
+    }
+
+    .seccion2 p {
+        font-size: 16px; /* Tamaño de fuente ajustado para tablets en vertical */
+    }
+
+    /* Ajustes para la sección 4 */
+    .seccion4 {
+        grid-template-columns: 1fr; /* Una sola columna en tablets en vertical */
+        padding: 15px; /* Relleno interno reducido */
+    }
+
+    .grid-item img {
+        height: 150px; /* Altura de la imagen ajustada para tablets en vertical */
+        margin-top: 20px; /* Margen superior ajustado */
+    }
+
+    /* Ajustes para el pie de página */
+    footer {
+        flex-direction: column; /* Alinea elementos en columna en vertical */
+        padding: 10px; /* Relleno interno reducido */
+    }
+
+    footer p {
+        margin: 5px 0; /* Margen entre párrafos ajustado */
+    }
+
+    /* Ajustes para el menú en tablets en vertical */
+    .menu-container .menu li a {
+        font-size: 22px; /* Tamaño de fuente ajustado para tablets en vertical */
+    }
+
+    .menu-container {
+        padding: 10px 0; /* Relleno interno ajustado */
+    }
+}
+
+/* Estilos para tablets en orientación horizontal (ancho mayor que alto) */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    /* Ajustes para el encabezado */
+    header li a {
+        font-size: 24px; /* Tamaño de fuente reducido para tablets en horizontal */
+    }
+
+    header .logo img {
+        height: 60px; /* Altura del logo reducida */
+        width: 60px; /* Ancho del logo reducido */
+    }
+
+    /* Ajustes para las secciones 1 y 3 */
+    .seccion1, .seccion3 {
+        min-height: 500px; /* Altura mínima ajustada para tablets en horizontal */
+    }
+
+    .seccion1 img, .seccion3 img {
+        height: 500px; /* Altura de la imagen ajustada para tablets en horizontal */
+    }
+
+    .seccion1 video, .seccion3 video {
+        width: 70%; /* Ancho del video ajustado para tablets en horizontal */
+    }
+
+    /* Ajustes para la sección 2 */
+    .seccion2 h1 {
+        font-size: 28px; /* Tamaño de fuente ajustado para tablets en horizontal */
+    }
+
+    .seccion2 p {
+        font-size: 18px; /* Tamaño de fuente ajustado para tablets en horizontal */
+    }
+
+    /* Ajustes para la sección 4 */
+    .seccion4 {
+        grid-template-columns: 1fr 1fr; /* Dos columnas en tablets en horizontal */
+        padding: 20px; /* Relleno interno reducido */
+    }
+
+    .grid-item img {
+        height: 180px; /* Altura de la imagen ajustada para tablets en horizontal */
+        margin-top: 30px; /* Margen superior ajustado */
+    }
+
+    /* Ajustes para el pie de página */
+    footer {
+        flex-direction: row; /* Mantiene la alineación en fila en horizontal */
+        padding: 15px; /* Relleno interno reducido */
+    }
+
+    footer p {
+        margin: 0 10px; /* Margen entre párrafos ajustado */
+    }
+
+    /* Ajustes para el menú en tablets en horizontal */
+    .menu-container .menu li a {
+        font-size: 24px; /* Tamaño de fuente ajustado para tablets en horizontal */
+    }
+
+    .menu-container {
+        padding: 15px 0; /* Relleno interno ajustado */
+    }
+}

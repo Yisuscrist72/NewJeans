@@ -77,3 +77,158 @@
         padding: 10px 0; /* Reducir el padding del menú */
     }
 }
+
+/* Ajustes para tablets en orientación vertical (portrait) */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+    body {
+        font-size: 16px;
+    }
+
+    /* Ajustes para el encabezado */
+    header li a {
+        font-size: 26px;
+    }
+
+    header .logo img {
+        height: 70px;
+        width: 70px;
+    }
+
+    /* Ajustes para el fondo de la sección principal */
+    .Fondo {
+        height: 70vh;
+    }
+
+    /* Ajustes para la sección 1 */
+    .seccion1 {
+        height: 50vh;
+        margin-bottom: 30px;
+    }
+
+    .CD {
+        width: 35%; /* Tamaño intermedio para el CD */
+    }
+
+    /* Ajustes para las secciones 2 y 3 */
+    .seccion2, .seccion3 {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en tablets verticales */
+        padding: 25px;
+        gap: 15px;
+    }
+
+    .seccion2 .grid-item, .seccion3 .grid-item {
+        padding: 18px;
+    }
+
+    .seccion2 .grid-item h3, .seccion3 .grid-item h3 {
+        font-size: 20px;
+    }
+
+    /* Ajustes para los contenedores de audio */
+    .audio-container {
+        gap: 15px;
+    }
+
+    .audio-item {
+        padding: 12px;
+    }
+
+    .audio-item h4 {
+        font-size: 15px;
+    }
+
+    /* Ajustes para el footer */
+    footer {
+        padding: 18px;
+    }
+}
+
+/* Ajustes para tablets en orientación horizontal (landscape) */
+@media (min-width: 769px) and (max-width: 1199px) and (orientation: landscape) {
+    body {
+        font-size: 16px;
+    }
+
+    /* Ajustes para el encabezado */
+    header li a {
+        font-size: 28px;
+    }
+
+    header .logo img {
+        height: 75px;
+        width: 75px;
+    }
+
+    /* Ajustes para el fondo de la sección principal */
+    .Fondo {
+        height: 85vh; /* Mayor altura en modo horizontal */
+    }
+
+    /* Ajustes para la sección 1 */
+    .seccion1 {
+        height: 55vh;
+        margin-bottom: 35px;
+    }
+
+    .CD {
+        width: 30%; /* Tamaño intermedio para el CD */
+    }
+
+    /* Ajustes para las secciones 2 y 3 */
+    .seccion2, .seccion3 {
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas en tablets horizontales */
+        padding: 25px;
+        gap: 18px;
+    }
+
+    .seccion2 .grid-item, .seccion3 .grid-item {
+        padding: 20px;
+    }
+
+    .seccion2 .grid-item h3, .seccion3 .grid-item h3 {
+        font-size: 22px;
+    }
+
+    .seccion2 .grid-item p, .seccion3 .grid-item p {
+        font-size: 15px;
+    }
+
+    /* Ajustes para los contenedores de audio */
+    .audio-container {
+        gap: 15px;
+    }
+
+    .audio-item {
+        flex-direction: row; /* Mantener disposición horizontal */
+        padding: 12px;
+    }
+
+    .audio-item h4 {
+        font-size: 16px;
+    }
+
+    /* Ajustes para el footer */
+    footer {
+        flex-direction: row; /* Mantener disposición horizontal */
+        padding: 18px;
+    }
+    
+    /* Ajustes para los iconos del menú */
+    .menu-icons img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Ajustes específicos para iPad Pro y tablets más grandes */
+@media (min-width: 1025px) and (max-width: 1199px) {
+    /* Ajustes para las secciones 2 y 3 en tablets grandes */
+    .seccion2, .seccion3 {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
+    /* Mejorar la experiencia en audioplayer para tablets grandes */
+    audio {
+        width: 250px;
+    }
+}
