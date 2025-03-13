@@ -1,7 +1,7 @@
 /* responsive_musica.css */
 
 /* Ajustes generales para móviles */
-@media (max-width: 768px) {
+@media (max-width: 768px) and (orientation: portrait) {
     body {
         font-size: 14px; /* Reducir el tamaño de la fuente para móviles */
     }
@@ -77,6 +77,75 @@
         padding: 10px 0; /* Reducir el padding del menú */
     }
 }
+
+/* Ajustes específicos para móviles en orientación horizontal (landscape) */
+@media (max-width: 768px) and (orientation: landscape) {
+    body {
+        font-size: 14px; /* Tamaño de fuente similar a portrait */
+    }
+
+    /* Fondo principal */
+    .Fondo {
+        height: 75vh; /* Reducir altura para compensar menor espacio vertical */
+    }
+
+    /* Sección 1 */
+    .seccion1 {
+        height: 45vh; /* Ajuste proporcional a la altura */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .CD {
+        width: 20%; /* Tamaño proporcional al ancho en landscape */
+    }
+
+    /* Sección 2 y 3 */
+    .seccion2, .seccion3 {
+        grid-template-columns: repeat(1, 1fr); /* Dos columnas para aprovechar el ancho */
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .seccion2 .grid-item, .seccion3 .grid-item {
+        padding: 12px;
+    }
+
+    .seccion2 .grid-item h3, .seccion3 .grid-item h3 {
+        font-size: 18px; /* Mantener coherencia con portrait */
+    }
+
+    .seccion2 .grid-item p, .seccion3 .grid-item p {
+        font-size: 14px;
+    }
+
+    /* Contenedor de audio */
+    .audio-container {
+        flex-direction: row; /* Mantener disposición horizontal */
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .audio-item {
+        flex-direction: row;
+        align-items: center;
+        padding: 8px;
+    }
+
+    .audio-item h4 {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: row; /* Mantener disposición horizontal */
+        padding: 12px;
+        justify-content: space-between;
+    }
+}
+
 
 /* Ajustes para tablets en orientación vertical (portrait) */
 @media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
@@ -217,18 +286,5 @@
     .menu-icons img {
         width: 28px;
         height: 28px;
-    }
-}
-
-/* Ajustes específicos para iPad Pro y tablets más grandes */
-@media (min-width: 1025px) and (max-width: 1199px) {
-    /* Ajustes para las secciones 2 y 3 en tablets grandes */
-    .seccion2, .seccion3 {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-    
-    /* Mejorar la experiencia en audioplayer para tablets grandes */
-    audio {
-        width: 250px;
     }
 }

@@ -91,7 +91,7 @@
     }
 
     header li a {
-        font-size: 26px; /* Tamaño de fuente reducido para el menú */
+        font-size: 28px; /* Tamaño de fuente reducido para el menú */
     }
 
     header .logo img {
@@ -129,7 +129,7 @@
     }
 
     header li a {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     header .logo img {

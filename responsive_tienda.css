@@ -77,7 +77,7 @@
 
     /* Ajustes para el header */
     header li a {
-        font-size: 26px; /* Tamaño reducido del texto del menú */
+        font-size: 28px; /* Tamaño reducido del texto del menú */
     }
 
     /* Ajustes para el footer */
@@ -117,7 +117,7 @@
 
     /* Ajustes para el header */
     header li a {
-        font-size: 24px; /* Tamaño reducido del texto del menú */
+        font-size: 26px; /* Tamaño reducido del texto del menú */
     }
 
     header li {

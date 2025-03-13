@@ -48,36 +48,7 @@
     }
 }
 
-@media (max-width: 480px) {
-    .tour-calendar {
-        width: 100%; /* Ocupa todo el ancho disponible */
-        padding: 10px; /* Reduce aún más el padding */
-    }
 
-    .tour-calendar h2 {
-        font-size: 20px; /* Reduce más el tamaño de la fuente */
-    }
-
-    .tour-calendar th,
-    .tour-calendar td {
-        font-size: 14px; /* Reduce más el tamaño de la fuente */
-        padding: 6px; /* Reduce más el padding de las celdas */
-    }
-
-    .tour-calendar .buy-tickets {
-        padding: 5px 10px; /* Reduce más el padding del botón */
-        font-size: 12px; /* Reduce más el tamaño de la fuente del botón */
-    }
-
-    /* Añade estas reglas para ajustar el menú en pantallas más pequeñas */
-    .menu-container .menu li a {
-        font-size: 18px; /* Reducir aún más el tamaño de la fuente */
-    }
-
-    .menu-container {
-        padding: 5px 0; /* Reducir aún más el padding del menú */
-    }
-}
 
 @media (min-width: 769px) and (max-width: 1199px) and (orientation: landscape) {
     .Fondo {
@@ -110,7 +81,7 @@
     }
 
     header li a {
-        font-size: 24px; 
+        font-size: 28px; 
     }
 
     header .logo img {
@@ -157,7 +128,7 @@
 
 
     header li a {
-        font-size: 22px;
+        font-size: 26px;
         letter-spacing: 1px; 
     }
 
