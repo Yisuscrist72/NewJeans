@@ -1,0 +1,79 @@
+/* responsive_musica.css */
+
+/* Ajustes generales para móviles */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reducir el tamaño de la fuente para móviles */
+    }
+
+    /* Ajustes para el fondo de la sección principal */
+    .Fondo {
+        height: 80vh; /* Reducir la altura del fondo para móviles */
+    }
+
+    /* Ajustes para la sección 1 */
+    .seccion1 {
+        height: 40vh; /* Reducir la altura de la sección 1 */
+        margin-bottom: 20px; /* Reducir el margen inferior */
+    }
+
+    .CD {
+        width: 50%; /* Aumentar el tamaño del CD para que sea más visible en móviles */
+    }
+
+    /* Ajustes para las secciones 2 y 3 */
+    .seccion2, .seccion3 {
+        grid-template-columns: 1fr; /* Cambiar a una sola columna en móviles */
+        padding: 15px; /* Reducir el padding */
+    }
+
+    .seccion2 .grid-item, .seccion3 .grid-item {
+        padding: 15px; /* Reducir el padding de los elementos de la cuadrícula */
+    }
+
+    .seccion2 .grid-item img, .seccion3 .grid-item img {
+        margin-bottom: 5px; /* Reducir el margen inferior de las imágenes */
+    }
+
+    .seccion2 .grid-item h3, .seccion3 .grid-item h3 {
+        font-size: 18px; /* Reducir el tamaño de la fuente del título */
+    }
+
+    .seccion2 .grid-item p, .seccion3 .grid-item p {
+        font-size: 14px; /* Reducir el tamaño de la fuente del texto */
+    }
+
+    /* Ajustes para los contenedores de audio */
+    .audio-container {
+        gap: 10px; /* Reducir el espacio entre los elementos de audio */
+    }
+
+    .audio-item {
+        flex-direction: column; /* Cambiar a disposición vertical en móviles */
+        align-items: flex-start; /* Alinear el texto a la izquierda */
+        padding: 8px; /* Reducir el padding */
+    }
+
+    .audio-item h4 {
+        font-size: 14px; /* Reducir el tamaño de la fuente del título del audio */
+    }
+
+    /* Ajustes para el footer */
+    footer {
+        flex-direction: column; /* Cambiar a disposición vertical en móviles */
+        text-align: center; /* Centrar el texto */
+        padding: 15px; /* Reducir el padding */
+    }
+
+    footer p {
+        margin: 5px 0; /* Reducir el margen entre los párrafos */
+    }
+    
+    .menu-container .menu li a {
+        font-size: 22px; /* Reducir ligeramente el tamaño de la fuente si es necesario */
+    }
+
+    .menu-container {
+        padding: 10px 0; /* Reducir el padding del menú */
+    }
+}
