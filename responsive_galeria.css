@@ -84,7 +84,7 @@
 }
 
 /* Estilos para dispositivos móviles en orientación landscape */
-@media (max-width: 768px) and (orientation: landscape) {
+@media (max-width: 823px) and (orientation: landscape) {
     body {
         background-image: url('img_galeria/Fondo_Galeria.jpeg');
         background-attachment: fixed;

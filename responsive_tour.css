@@ -98,16 +98,16 @@
     }
 }
 
-@media (max-width: 768px) and (orientation: landscape) {
+@media (max-width: 825px) and (orientation: landscape) {
     .Fondo {
-        height: 180vh; /* Ajusta la altura del fondo */
+        height: 100vh; /* Ajusta la altura del fondo */
         background-position: top; /* Asegura que la imagen de fondo esté bien posicionada */
     }
 
+
     .tour-calendar {
         width: 95%; /* Ocupa casi todo el ancho disponible */
-        padding: 15px; /* Reduce el padding para aprovechar el espacio */
-       
+        padding: 20px; /* Reduce el padding para aprovechar el espacio */
     }
 
     .tour-calendar h2 {

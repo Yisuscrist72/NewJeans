@@ -403,7 +403,7 @@ footer {
 }
 
 /* Estilos para móviles en orientación horizontal (ancho máximo de 768px) */
-@media (max-width: 768px) and (orientation: landscape) {
+@media (max-width: 823px) and (orientation: landscape) {
     /* Ajustes para el encabezado */
     header li a {
         font-size: 24px; /* Tamaño de fuente reducido para móviles en horizontal */

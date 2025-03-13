@@ -148,7 +148,7 @@
 }
 
 /* Ajustes específicos para móviles en orientación horizontal (landscape) */
-@media (max-width: 768px) and (orientation: landscape) {
+@media (max-width: 823px) and (orientation: landscape) {
     body {
         font-size: 14px; /* Tamaño de fuente similar a portrait */
     }
@@ -173,7 +173,7 @@
 
     /* Sección 2 y 3 */
     .seccion2, .seccion3 {
-        grid-template-columns: repeat(1, 1fr); /* Dos columnas para aprovechar el ancho */
+        grid-template-columns: repeat(3, 1fr); /* Dos columnas para aprovechar el ancho */
         padding: 15px;
         gap: 10px;
     }

@@ -91,14 +91,14 @@
     }
 }
 
-@media (max-width: 768px) and (orientation: landscape) {
+@media (max-width: 823px) and (orientation: landscape) {
     /* Ajustes para el contenido principal */
     .tienda {
         padding: 25px; /* Espaciado interno */
     }
 
     .productos {
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas horizontales pequeñas */
+        grid-template-columns: repeat(1, 1fr); /* Dos columnas en pantallas horizontales pequeñas */
         gap: 20px; /* Espacio entre las tarjetas */
     }
 
