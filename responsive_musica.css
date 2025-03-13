@@ -79,7 +79,7 @@
 }
 
 /* Ajustes específicos para móviles en orientación horizontal (landscape) */
-@media (max-width: 425px) and (orientation: landscape) {
+@media (max-width: 768px) and (orientation: landscape) {
     body {
         font-size: 14px; /* Tamaño de fuente similar a portrait */
     }
