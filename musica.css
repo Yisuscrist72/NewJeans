@@ -100,6 +100,17 @@ header .logo img {
     transform: scale(1.5); /* Aumenta el tamaño de la imagen al 150% */
 }
 
+
+.hamburguesa a{
+    display: none;
+    position: absolute;
+    top: 15px;
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+    font-size: 30px; /* Tamaño del ícono */
+    color: white; /* Color del ícono */
+    cursor: pointer;
+}
+
 main {
     background-color: aliceblue;
     background-attachment: fixed;

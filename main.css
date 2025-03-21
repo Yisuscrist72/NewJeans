@@ -115,6 +115,16 @@ header .logo img {
     display: none; /* Oculta el botón */
 }
 
+.hamburguesa a{
+    display: none;
+    position: absolute;
+    top: 15px;
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+    font-size: 30px; /* Tamaño del ícono */
+    color: white; /* Color del ícono */
+    cursor: pointer;
+}
+
 /* Estilos para el contenido principal */
 main {
     background-color: aliceblue; /* Fondo de color azul claro */
@@ -332,13 +342,17 @@ footer {
         margin: 5px 0; /* Margen entre párrafos */
     }
 
-    /* Ajustes para el menú en móviles */
     .menu-container .menu li a {
-        font-size: 22px; /* Tamaño de fuente reducido */
+        display: none;
     }
 
-    .menu-container {
-        padding: 10px 0; /* Relleno interno reducido */
+    .menu-container .menu-icons {
+        display: none;
+    }
+
+    .hamburguesa a{
+        display: block;
+        left: 20px;
     }
 }
 
@@ -394,11 +408,16 @@ footer {
 
     /* Ajustes para el menú en pantallas pequeñas */
     .menu-container .menu li a {
-        font-size: 18px; /* Tamaño de fuente reducido para pantallas pequeñas */
+        display: none;
     }
 
-    .menu-container {
-        padding: 5px 0; /* Relleno interno reducido */
+    .menu-container .menu-icons {
+        display: none;
+    }
+
+    .hamburguesa a{
+        display: block;
+        left: 20px;
     }
 }
 

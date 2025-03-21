@@ -4,6 +4,7 @@
     /* Ajustes para el contenido principal */
     .tienda {
         padding: 20px; /* Espaciado interno */
+        margin-top: 50px;
     }
 
     .productos {
@@ -35,13 +36,17 @@
         padding: 10px; /* Espaciado interno */
     }
 
-
     .menu-container .menu li a {
-        font-size: 22px; /* Reducir ligeramente el tamaño de la fuente si es necesario */
+        display: none;
     }
 
-    .menu-container {
-        padding: 10px 0; /* Reducir el padding del menú */
+    .menu-container .menu-icons {
+        display: none;
+    }
+
+    .hamburguesa a{
+        display: block;
+        left: 20px;
     }
 
 }
@@ -81,13 +86,17 @@
         padding: 8px; /* Espaciado interno reducido */
     }
 
-    /* Ajustes para el menú */
     .menu-container .menu li a {
-        font-size: 20px; /* Reducir ligeramente el tamaño de la fuente */
+        display: none;
     }
 
-    .menu-container {
-        padding: 8px 0; /* Reducir el padding del menú */
+    .menu-container .menu-icons {
+        display: none;
+    }
+
+    .hamburguesa a{
+        display: block;
+        left: 20px;
     }
 }
 

@@ -38,13 +38,17 @@
         margin: 5px 0; /* Ajusta los márgenes de los párrafos */
     }
 
-    /* Añade estas reglas para ajustar el menú */
     .menu-container .menu li a {
-        font-size: 22px; /* Reducir ligeramente el tamaño de la fuente */
+        display: none;
     }
 
-    .menu-container {
-        padding: 10px 0; /* Reducir el padding del menú */
+    .menu-container .menu-icons {
+        display: none;
+    }
+
+    .hamburguesa a{
+        display: block;
+        left: 20px;
     }
 }
 
@@ -88,13 +92,17 @@
         margin: 5px 0; /* Ajusta los márgenes de los párrafos */
     }
 
-    /* Añade estas reglas para ajustar el menú */
     .menu-container .menu li a {
-        font-size: 20px; /* Reducir ligeramente el tamaño de la fuente */
+        display: none;
     }
 
-    .menu-container {
-        padding: 8px 0; /* Reducir el padding del menú */
+    .menu-container .menu-icons {
+        display: none;
+    }
+
+    .hamburguesa a{
+        display: block;
+        left: 20px;
     }
 }
 

@@ -102,6 +102,16 @@ header .logo img {
     display: none;
 }
 
+.hamburguesa a{
+    display: none;
+    position: absolute;
+    top: 15px;
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+    font-size: 30px; /* Tamaño del ícono */
+    color: white; /* Color del ícono */
+    cursor: pointer;
+}
+
 
 .tienda {
     text-align: center;
